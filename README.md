@@ -7,7 +7,7 @@ A production-ready real-time data pipeline for processing purchasing events usin
 This project implements a complete streaming data pipeline that satisfies all assignment requirements:
 
 1.**Event Producer**: Generates realistic purchasing events
-2.**Streaming Job**: PySpark processes Kafka events with daily aggregation  
+2.**Streaming Job**: PySpark processes Kafka events with daily aggregation
 3.**Output Data**: Console output with timestamp and running totals
 4.**PySpark Functions**: Uses foreachBatch for flexible processing
 
