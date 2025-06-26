@@ -721,7 +721,6 @@ make run-consumer    # Terminal 1
 make run-producer    # Terminal 2
 
 # Development commands
-make test           # Run tests
 make format         # Format code
 make lint          # Check code quality
 make clean         # Clean temporary files
