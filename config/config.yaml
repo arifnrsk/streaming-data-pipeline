@@ -1,0 +1,24 @@
+kafka:
+  bootstrap_servers: "localhost:9092"
+  topic_name: "purchasing_events"
+  consumer_group: "streaming_consumer_group"
+  auto_offset_reset: "earliest"
+  
+producer:
+  batch_size: 100
+  linger_ms: 1000
+  acks: 1
+  retries: 3
+  event_interval_seconds: 1
+  max_events: 1000
+
+spark:
+  app_name: "StreamingDataPipeline"
+  master: "local[*]"
+  checkpoint_location: "./checkpoints"
+  output_mode: "complete"
+  trigger_processing_time: "10 seconds"
+  
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s" 
