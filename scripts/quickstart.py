@@ -171,10 +171,10 @@ def run_health_check():
             all_passed = False
     
     if all_passed:
-        logger.info("\n✅ All checks passed! Ready to run the pipeline.")
+        logger.info("\nAll checks passed! Ready to run the pipeline.")
         show_usage_instructions()
     else:
-        logger.info("\n❌ Some checks failed. Please fix issues before proceeding.")
+        logger.info("\nSome checks failed. Please fix issues before proceeding.")
         show_troubleshooting_tips()
     
     return all_passed
@@ -210,7 +210,7 @@ def main():
     """Main function."""
     setup_logging()
     
-    print("🚀 Streaming Data Pipeline - Quick Start")
+    print("Streaming Data Pipeline - Quick Start")
     print("=" * 60)
     
     try:
