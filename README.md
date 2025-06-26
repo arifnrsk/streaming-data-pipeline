@@ -595,32 +595,6 @@ logging:
   format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 ```
 
-## Testing & Quality Assurance
-
-### Run Tests
-```bash
-# Run all tests
-make test
-
-# Run specific test file
-pytest tests/test_event_producer.py -v
-
-# Run with coverage
-pytest tests/ --cov=src --cov-report=html
-```
-
-### Code Quality
-```bash
-# Format code
-make format
-
-# Check linting
-make lint
-
-# Run all quality checks
-make format lint test
-```
-
 ## Monitoring & Debugging
 
 ### Spark UI
