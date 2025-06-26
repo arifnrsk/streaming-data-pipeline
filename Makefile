@@ -91,7 +91,8 @@ endif
 .PHONY: run-consumer
 run-consumer:
 ifeq ($(OS),Windows_NT)
-	set HADOOP_HOME=C:\hadoop && $(VENV_DIR)\Scripts\python -m src.consumer.streaming_job
+	@echo "Setting HADOOP_HOME and running streaming consumer..."
+	@powershell -Command "$$env:HADOOP_HOME='C:\hadoop'; $$env:PATH+=';C:\hadoop\bin'; venv\Scripts\python -m src.consumer.streaming_job"
 else
 	$(VENV_DIR)/bin/python -m src.consumer.streaming_job
 endif
